@@ -1,0 +1,9 @@
+.page-logo{
+    @extend %logo;
+
+    &--white{
+        @extend %logo;
+        color:$white;
+        background-image: url('../assets/icon/logo-white.svg');
+    }
+}

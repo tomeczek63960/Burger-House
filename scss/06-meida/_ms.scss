@@ -1,0 +1,9 @@
+@media screen and (min-width:900px){
+    @include utilities--ms;
+    @include placeholders--ms;
+    @include page-hero--ms;
+    @include contact--ms;
+    @include menu--ms;
+    @include story--ms;
+    @include page-footer--ms;
+}   

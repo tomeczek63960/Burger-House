@@ -1,0 +1,43 @@
+.icon--localization{
+    @include backgroundImage('icon/icon-localization.svg',contain,left center);
+}
+.icon--mail{
+    @include backgroundImage('icon/icon-mail.svg',contain,left center);
+}
+
+.icon--facebook,
+.icon--twitter,
+.icon--instagram,
+.icon--whatsapp{
+    @include size(30px, 30px, 20px 10px 0 0);
+    display: inline-block;
+    
+    background-color: $white;
+    border-radius: 50%;
+    background-size: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+.icon--facebook{
+    background-image: url('../assets/icon/icon-facebook.svg');
+}
+.icon--twitter{
+    background-image: url('../assets/icon/icon-twitter.svg');
+}
+.icon--instagram{
+    background-image: url('../assets/icon/icon-instagram.svg');
+}
+.icon--whatsapp{
+    background-image: url('../assets/icon/icon-whatsapp.svg');
+}
+
+@mixin icon--sm {
+    .icon--facebook,
+    .icon--twitter,
+    .icon--instagram,
+    .icon--whatsapp{
+        margin-top: 0;
+    }    
+}

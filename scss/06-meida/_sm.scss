@@ -1,0 +1,16 @@
+@media screen and (max-width:699px){
+    @include utilities--sm-max;
+    @include page-nav--sm-max;
+}
+
+@media screen and (min-width:700px){
+    @include utilities--sm;
+    @include icon--sm;
+    @include page-nav--sm;
+    @include page-hero--sm;
+    @include contact--sm;
+    @include menu--sm;
+    @include story--sm;
+    @include page-footer--sm;
+}
+

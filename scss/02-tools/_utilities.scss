@@ -1,0 +1,26 @@
+.center-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1390px;
+}
+
+@mixin utilities--sm-max {
+    .body--nav-active{
+        height: 100vh;
+        overflow-y: hidden;
+    }
+}
+@mixin utilities--sm {
+    .center-wrapper{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@mixin utilities--ms {
+    .center-wrapper{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}

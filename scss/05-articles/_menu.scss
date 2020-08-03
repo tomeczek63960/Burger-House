@@ -1,0 +1,193 @@
+.menu{
+    margin-top: 40px;
+
+    &__item{
+        @include size(100%, 130px,10px auto 0);
+        position: relative;
+        max-width:450px;
+        
+        &--large{
+            height: 200px;
+        }
+        
+        img{
+            @extend %master-size;
+        }
+
+        &__heading{
+            @include absolute(20px,auto,auto,20px);
+            color:$white;
+            font-size: 18px;
+
+            &--large{
+                font-size: 23px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__heading-group{
+        margin-top: 50px;
+        text-align: center;
+        color:$hero_text;
+
+    }
+    &__btn{
+
+        padding: 5px 10px;
+        font-size: 18px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-weight: normal;
+        background-color: $hero_bg;
+    }
+    
+    &__heading{
+        margin-top: 25px;
+        font-size: 30px;
+        font-family: LibreFranklin;
+        text-transform: uppercase;
+    }
+    &__text{
+        margin-top: 15px;
+        font-size: 14px;
+        font-family: Montserrat;
+        line-height: 1.5
+    }
+
+    &__content{
+        @include flex(space-around, center, auto, wrap);
+
+        &__item{
+            margin-top: 50px;
+            max-width: 310px;
+            text-align: center;
+            
+            &__img{
+                @include size(100%, 220px, 0 auto, 0 15% 50px);
+                position: relative;
+                
+                .menu__content__item-1 &::after,
+                .menu__content__item-3 &::after,
+                .menu__content__item-2 &::after{
+                    @include absolute(auto,auto,0,0);
+                    @include size(100%,50px,10px 0 0);
+                    @include backgroundImage('Shadow-1.png',contain,center center);
+                    content:"";
+                }
+                .menu__content__item-2 &::after{
+                    background-image: url('../assets/Shadow-4.png');
+                }
+                img{
+                    @extend %master-size;
+                }
+                
+            }
+            &__heading{
+                margin-top: 15px;
+                font-size: 25px;
+                font-weight: normal;
+                letter-spacing: 2px;
+            }
+            &__text{
+                margin-top: 15px;
+                font-size: 14px;
+                font-family: Montserrat;
+                line-height: 1.5;
+            }
+            &__btn{
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: $red;
+                color:$white;
+                font-size: 15px;
+                font-family: LibreFranklin;
+            }
+        }
+    }
+}
+
+@mixin menu--sm{
+    .menu{
+        &__item{
+            margin: 0;
+            max-width: 600px;
+        }
+        &__item-wrapper{
+            @include flex(center);
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1200px;
+            height:280px;
+        }
+        &__item-margin{
+            margin-top: 20px;
+        }
+        &__item--large{
+            height:100%!important;
+            margin-right: 20px;
+            width:50%;
+            flex-shrink: 0;
+        }
+    }
+
+}
+@mixin menu--ms{
+    .menu{
+        margin-top: 70px;
+
+        &__item{
+            height:160px;
+
+            &__heading{
+                font-size: 25px;
+
+                &--large{
+                    font-size: 35px;
+                }
+            }
+
+            &-wrapper{
+                height:340px;
+            }
+        }
+        &__heading-group{
+            margin-top: 70px;
+        }
+        &__heading{
+            margin-top: 35px;
+        }
+        &__text{
+            margin-top: 25px;
+        }
+
+        &__content__item{
+            margin-top: 60px;
+        }
+    }
+
+}
+@mixin menu--md {
+
+    .menu__item{
+        height: 190px;
+
+        &__heading{
+            font-size: 24px;
+            
+            &--large{
+                font-size: 41px;
+            }
+        }
+        &-wrapper{
+            height: 420px;
+        }
+        &-margin{
+            margin-top: 40px;
+        }
+        &--large{
+            margin-right: 40px;
+        }
+    }
+
+}

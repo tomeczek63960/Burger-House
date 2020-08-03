@@ -1,0 +1,136 @@
+.contact{
+    margin-top: 45px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 60px;
+
+    &__subheading{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    &__heading{
+        margin-top: 15px;
+        font-size: 33px;
+        font-family: LibreFranklin;
+        text-transform: uppercase;
+    }
+    &__form{
+        margin-top: 30px;
+        max-width: 790px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &-control{
+            @include size(100%,40px, 15px 0 0, 0 10px);
+            border:1px solid $input_border;
+            background-color: transparent;
+            border-radius: 4px;
+            font-size: 15px;
+            font-family: Montserrat;
+            color:$text-secondary;
+
+            &::placeholder{
+                text-transform: capitalize;
+            }
+        }
+        &__btn{
+            @include size(100%,40px, 15px 0 0);
+            background-color: $red;
+            border-radius: 5px;
+            color:$white;
+            font-size: 15px;
+            font-family: LibreFranklin;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}
+
+@mixin contact--xs {
+
+    .contact{
+
+        &__form{
+            @include flex(space-between, auto,auto ,wrap);
+
+            &-control{
+                width: 48%;
+                height:50px;
+            }
+            &__btn{
+                width: 48%;
+                height: 50px;
+            }
+        }
+    }
+
+}
+@mixin contact--sm {
+    .contact{
+        margin-top: 70px;
+
+        &__subheading{
+            font-size: 25px;
+        }
+        &__heading{
+            font-size: 40px;
+        }
+        &__form{
+            margin-top: 50px;
+
+            &-control,
+            &__btn{
+                margin-top: 25px;
+            }
+        }
+    }
+}
+@mixin contact--ms {
+    .contact{
+        padding-bottom: 100px;
+
+        &-wrapper{
+
+            background-image: url('../assets/Burger.png'), url("../assets/Image.png"), url('../assets/Bottle.png');
+            background-size: 150px, 200px, 50px 160px;
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-position: left top, right -30px bottom 10px, left 10px top 70% ;
+        }
+    }
+}
+@mixin contact--md{
+    .contact{
+        padding-top: 40px;
+        padding-bottom: 130px;
+        
+        &-wrapper{
+            background-size: 180px, 300px, 70px 230px;
+            background-position: left top, right -50px bottom 0, left 7% top 65% ;
+        }
+
+        &__subheading{
+            font-size: 29px;
+        }
+        &__heading{
+            font-size:  50px;
+        }
+    }
+}
+@mixin contact--lg{
+    .contact{
+        padding-top: 60px;
+        padding-bottom: 150px;
+
+        &-wrapper{
+
+            background-size: 200px, 350px, 70px 260px;
+            background-position: left top, right -50px bottom 0, left 13% top 60% ;
+        }
+
+        &__form{
+            margin-top: 70px;
+        }
+    }
+}

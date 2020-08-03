@@ -1,0 +1,220 @@
+.page-hero{
+    @include size(auto, 100vh);
+    background-color: $hero_bg;
+    color:$hero_text;
+
+    &__content{
+        padding-top: 0;
+        text-align: left;
+        display: flex;
+
+        &__img{
+            @include size( 100%, calc(100vh - 160px), 0 auto );
+            margin-top: 30px;
+            max-width: 360px;
+            width: 70%;
+            max-height: 650px;
+            position: relative;
+
+            &::after{
+                @extend %master-size;
+                @include absolute(33%,auto,auto,50%,translate(-50%,-50%));
+                @include backgroundImage('hero-shadow.png',100%,center top);
+                content:"";
+                display: block;
+            }
+            &__center{
+                @include absolute(auto,auto,0,50%,translateX(-35%), 20);
+                @include size(60%,70%);
+                max-height: 400px;
+            }
+            &__left{
+                @include absolute(auto,auto,0,-10%,auto,10);
+                @include size(70%, 70%);
+            }
+            &__right{
+                @include absolute(auto,0,0,auto,auto,10);
+                @include size(30%, 100%);
+                max-height: 500px;
+            }
+            &__discount{
+                @include flex(center,center,column);
+                @include absolute(auto,auto,0,20%,auto,30);
+                @include size(70px,70px);
+                
+                background-color:$red;
+                border-radius: 50%;
+                color:$white;
+                font-size: 15px;
+                line-height: 1;
+
+                &::after{
+                    @include absolute(50%,auto,auto,50%,translate(-50%,-50%));
+                    @include size(85%,85%);
+                    content:"";
+
+                    background-color: transparent;
+                    border:2px dashed $white;
+                    border-radius: 50%;
+                    animation: rotate 23s ease-in-out infinite;
+                }
+
+                &--large{
+                    font-size: 30px;
+                }
+                &--spacing{
+                    letter-spacing: 2px;
+                }
+            }
+        }
+
+        &__description{
+            &__text{
+                margin-top: 10px;
+                padding: 10px;
+
+                display: inline-block;
+                font-size: 2rem;
+                font-weight: normal;
+                border:dashed $hero_text 2px;
+                text-transform: uppercase;
+            }
+            &__heading{
+                // margin-top: 2.3rem;
+                margin-top: 2rem;
+                font-size: 5.1rem;
+                font-family: LibreFranklinItalic;
+                text-transform: uppercase;
+                font-weight: 800;
+                letter-spacing: 0.4rem;
+                text-shadow: 2px 2px $white;
+            }
+            &__subheading{
+                font-size: 3.5rem;
+            }
+        }
+        
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform:translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+@mixin page-hero--xs-height{
+
+    .page-hero{
+        &__content{
+            text-align: center;
+            display: block;
+    
+            &__img{
+                @include size( 100%, calc(100vh - 330px), 0 auto );
+                margin-top: 0;
+                width: 100%;
+                max-width: 450px;
+
+                &__discount{
+                    left:25%;
+                    @include size(90px,90px);
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+@mixin page-hero--xs {
+    @media screen and (min-height:500px){
+
+        .page-hero__content__img{
+            height:calc(100vh - 310px);
+        }
+}
+
+}
+@mixin  page-hero--sm {
+    .page-hero{
+
+        &__content{
+            display: flex;
+            padding-top: 100px;
+            text-align: left;
+
+            &__img{
+                margin-top: 50px;
+            }
+            &__description{
+                &__text{
+                    font-size: 24px;
+                }
+                &__heading{
+                    margin-top: 30px;
+                    font-size: 70px;
+                }
+                &__subheading{
+                    font-size: 50px;
+                }
+            }
+
+        }
+
+    }
+
+}
+@mixin page-hero--ms {
+    .page-hero{
+
+        &__content{
+            padding-top: 30px;
+
+            &__img{
+                margin-top: 0px;
+                height:calc(100vh - 170px);
+                max-width: 600px;
+
+                &__discount{
+                    left:30%;
+                    @include size(120px,120px);
+                    font-size: 27px;
+    
+                    &--large{
+                        font-size: 37px;
+                    }
+                }
+            }
+            &__description{
+                margin-top: 50px;
+
+                &__heading{
+                    margin-top: 40px;
+                    font-size: 85px;
+                }
+            }
+        }
+
+    }
+}
+@mixin page-hero--md {
+    .page-hero__content{
+        justify-content: space-between;
+
+        &__img{
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &__description{
+            &__heading{
+                font-size: 100px;
+                line-height: 1;
+            }
+            &__subheading{
+                font-size: 56px;
+            }
+        }
+    }
+}

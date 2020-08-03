@@ -1,0 +1,21 @@
+%logo{
+    @include backgroundImage('icon/logo-black.svg',contain, left center);
+    padding-left: 40px;
+    display: block;
+    color:$hero_text;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+%master-size{
+    width: 100%;
+    height: 100%;
+}
+
+@mixin placeholders--ms {
+    %logo{
+        font-size: 41px;
+        padding-left: 60px;
+    }
+}

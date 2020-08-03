@@ -1,0 +1,14 @@
+@media screen and (min-width:500px){
+    @include page-hero--xs;
+    @include contact--xs;
+    @include story--xs;
+}
+
+@media screen and (min-height:500px){
+    @include page-hero--xs-height;
+}
+
+@media screen and (max-height:525px){
+
+    @include page-nav--xs-max-height;
+}
