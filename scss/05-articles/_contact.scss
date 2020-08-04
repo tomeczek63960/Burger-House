@@ -20,6 +20,12 @@
         margin-left: auto;
         margin-right: auto;
 
+        &-control,
+        &__btn{
+            transform: scale(0);
+            opacity: 0;
+        }
+
         &-control{
             @include size(100%,40px, 15px 0 0, 0 10px);
             border:1px solid $input_border;

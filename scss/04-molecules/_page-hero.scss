@@ -13,8 +13,10 @@
             margin-top: 30px;
             max-width: 360px;
             width: 70%;
+            max-width: 100vw;
             max-height: 650px;
             position: relative;
+            overflow: hidden;
 
             &::after{
                 @extend %master-size;
@@ -22,6 +24,7 @@
                 @include backgroundImage('hero-shadow.png',100%,center top);
                 content:"";
                 display: block;
+                opacity: 1;
             }
             &__center{
                 @include absolute(auto,auto,0,50%,translateX(-35%), 20);
