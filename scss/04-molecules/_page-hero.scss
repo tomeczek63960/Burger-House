@@ -21,7 +21,7 @@
             &::after{
                 @extend %master-size;
                 @include absolute(33%,auto,auto,50%,translate(-50%,-50%));
-                @include backgroundImage('hero-shadow.png',100%,center top);
+                @include backgroundImage('webp/hero-shadow.webp',100%,center top);
                 content:"";
                 display: block;
                 opacity: 1;

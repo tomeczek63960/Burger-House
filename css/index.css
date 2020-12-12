@@ -3,6 +3,7 @@
   src: url("./fonts/Libre_Franklin/LibreFranklin-ExtraBoldItalic.ttf");
   font-style: italic;
   font-weight: 800;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: url("./fonts/Libre_Franklin/LibreFranklin-Regular.ttf");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
   src: url("./fonts/Bebas_Neue/BebasNeue-Regular.ttf");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +27,7 @@
   src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 .page-logo, .page-logo--white {
@@ -624,7 +628,7 @@ a {
   top: 33%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-image: url("../assets/hero-shadow.png");
+  background-image: url("../assets/webp/hero-shadow.webp");
   background-size: 100%;
   background-position: center top;
   background-repeat: no-repeat;
@@ -769,7 +773,7 @@ a {
 }
 
 .page-footer {
-  background-image: url("../assets/footer-bg.png");
+  background-image: url("../assets/webp/footer-bg.webp");
   background-size: cover;
   background-position: center left;
   background-repeat: no-repeat;
