@@ -1418,7 +1418,7 @@ a {
     padding-bottom: 100px;
   }
   .contact-wrapper {
-    background-image: url("../assets/Burger.png"), url("../assets/Image.png"), url("../assets/Bottle.png");
+    background-image: url("../assets/webp/Burger.webp"), url("../assets/webp/Image.webp"), url("../assets/webp/Bottle.webp");
     background-size: 150px, 200px, 50px 160px;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: left top, right -30px bottom 10px, left 10px top 70%;

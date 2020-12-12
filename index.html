@@ -32,7 +32,7 @@
                         <li class="page-nav__navbar__link"><a href="#menu">MENU</a></li>
                         <li class="page-nav__navbar__link"><a href="#story">OUR STORY</a></li>
                         <li class="page-nav__navbar__link"><a href="#contact">CONTACT US</a></li>
-                        <li class="page-nav__navbar__link--image"><img src="./assets/webp/burger1.webp" alt="burger"></li>
+                        <li class="page-nav__navbar__link--image"><img class="lazyLoad" data-src="./assets/webp/burger1.webp" alt="burger"></li>
                     </ul>
                 </div>
             </nav>
@@ -47,9 +47,9 @@
                         </h3>
                 </div>
                 <div class="page-hero__content__img">
-                    <img src="./assets/webp/burger1.webp" alt="Mega Burger" class="page-hero__content__img__center">
-                    <img src="./assets/webp/french-fries.webp" alt="French Fries" class="page-hero__content__img__left">
-                    <img src="./assets/webp/Drinks.webp" alt="Drinks" class="page-hero__content__img__right">
+                    <img data-src="./assets/webp/burger1.webp" alt="Mega Burger" class="lazyLoad page-hero__content__img__center">
+                    <img data-src="./assets/webp/french-fries.webp" alt="French Fries" class="lazyLoad page-hero__content__img__left">
+                    <img data-src="./assets/webp/Drinks.webp" alt="Drinks" class="lazyLoad page-hero__content__img__right">
 
                     <div class="page-hero__content__img__discount">
                         <p> <span class="page-hero__content__img__discount--large">$5</span>.49</p>
@@ -69,7 +69,7 @@
             <article class="menu" id="menu">
                 <div class="menu__item-wrapper">
                     <section class="menu__item menu__item--large">
-                        <img src="./assets/webp/burger2.webp" alt="" class="menu__item__img">
+                        <img data-src="./assets/webp/burger2.webp" alt="" class="lazyLoad menu__item__img">
 
                         <h5 class="menu__item__heading">
                             try it today <br>
@@ -80,7 +80,7 @@
 
                     <div>
                         <section class="menu__item menu__item--right">
-                            <img src="./assets/webp/Image-2.webp" alt="" class="menu__item__img">
+                            <img data-src="./assets/webp/Image-2.webp" alt="" class="lazyLoad menu__item__img">
 
                             <h5 class="menu__item__heading">
                                 try it today <br>
@@ -89,7 +89,7 @@
 
                         </section>
                         <section class="menu__item menu__item--right menu__item-margin">
-                            <img src="./assets/webp/Image-1.webp" alt="" class="menu__item__img">
+                            <img data-src="./assets/webp/Image-1.webp" alt="" class="lazyLoad menu__item__img">
 
                             <h5 class="menu__item__heading">
                                 try it today <br>
@@ -111,7 +111,7 @@
 
                     <section class="menu__content__item menu__content__item-1">
                         <div class="menu__content__item__img">
-                            <img src="./assets/webp/Burger-1.webp" alt="Big Burger">
+                            <img class="lazyLoad" data-src="./assets/webp/Burger-1.webp" alt="Big Burger">
                         </div>
                         <h4 class="menu__content__item__heading "> Lorem ipsum dolor</h4>
                         <p class="menu__content__item__text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
@@ -121,7 +121,7 @@
 
                     <section class="menu__content__item menu__content__item-2">
                         <div class="menu__content__item__img">
-                            <img src="./assets/webp/burger3.webp" alt="Big Burger">
+                            <img class="lazyLoad" data-src="./assets/webp/burger3.webp" alt="Big Burger">
                         </div>
                         <h4 class="menu__content__item__heading"> Lorem ipsum dolor</h4>
                         <p class="menu__content__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
@@ -131,7 +131,7 @@
 
                     <section class="menu__content__item menu__content__item-3">
                         <div class="menu__content__item__img">
-                            <img src="./assets/webp/Burger-1.webp" alt="Big Burger">
+                            <img class="lazyLoad" data-src="./assets/webp/Burger-1.webp" alt="Big Burger">
                         </div>
                         <h4 class="menu__content__item__heading"> Lorem ipsum dolor</h4>
                         <p class="menu__content__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
@@ -149,7 +149,7 @@
 
                     <section class="story__slider__item story__slider__item-1 story__slider__item--active">
                         <div class="story__slider__item__img">
-                            <img src="./assets/webp/slider-1.webp" alt="food">
+                            <img class="lazyLoad" data-src="./assets/webp/slider-1.webp" alt="food">
                         </div>
 
                         <div class="story__slider__item__content">
@@ -165,7 +165,7 @@
 
                     <section class="story__slider__item story__slider__item-2">
                         <div class="story__slider__item__img">
-                            <img src="./assets/webp/burger-slider-1.webp" alt="food">
+                            <img class="lazyLoad" data-src="./assets/webp/burger-slider-1.webp" alt="food">
                         </div>
 
                         <div class="story__slider__item__content">
@@ -180,7 +180,7 @@
                     </section>
                     <section class="story__slider__item story__slider__item-3">
                         <div class="story__slider__item__img">
-                            <img src="./assets/webp/burger-slider-2.webp" alt="food">
+                            <img class="lazyLoad" data-src="./assets/webp/burger-slider-2.webp" alt="food">
                         </div>
 
                         <div class="story__slider__item__content">
@@ -276,6 +276,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="./js/animation.js"></script>
-    
+    <script src="./js/lazyLoading.js"></script>
 </body>
 </html> 
